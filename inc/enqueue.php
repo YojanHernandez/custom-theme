@@ -18,7 +18,7 @@ function custom_theme_scripts() {
     );
 
     // Enqueue custom JavaScript
-    wp_enqueue_script( 
+    wp_enqueue_script_module( 
         'custom-theme-script', 
         CUSTOM_THEME_URI . '/assets/js/main.js', 
         array(), 
