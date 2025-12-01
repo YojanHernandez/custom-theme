@@ -34,24 +34,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'custom-theme' ); ?></a>
 
-    <header id="masthead" class="site-header">
-        <div class="container">
-            <div class="site-branding">
-
-                    <h1 class="site-title">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                            <?php bloginfo( 'name' ); ?>
-                        </a>
-                    </h1>
-                    <?php
-                    $description = get_bloginfo( 'description', 'display' );
-                    if ( $description || is_customize_preview() ) :
-                        ?>
-                        <p class="site-description"><?php echo $description; ?></p>
-                        <?php
-                    endif;
-                ?>
-            </div><!-- .site-branding -->
-
+    <header class="site-header">
+        <div class="container-fluid shadow text-center">
+            <div class="row">
+                <div class="col-2 mx-auto py-2">
+                    <?= get_custom_logo(); ?>
+                </div>
+            </div>
         </div><!-- .container -->
     </header><!-- #masthead -->
