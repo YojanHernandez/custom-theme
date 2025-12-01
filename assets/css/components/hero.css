@@ -1,0 +1,8 @@
+.hero {
+    background-color: black;
+    padding: 5rem 0;
+}
+
+.hero__container {
+    height: 400px;
+}
