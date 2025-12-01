@@ -12,9 +12,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 define( 'CUSTOM_THEME_DIR', get_template_directory() );
 define( 'CUSTOM_THEME_URI', get_template_directory_uri() );
 
-
 // Setup.
 require_once CUSTOM_THEME_DIR . '/inc/setup.php';
 
 // Enqueue.
 require_once CUSTOM_THEME_DIR . '/inc/enqueue.php';
+
+// API.
+require_once CUSTOM_THEME_DIR . '/inc/api.php';
+
+// Custom tables.
+require_once CUSTOM_THEME_DIR . '/inc/db.php';
+
