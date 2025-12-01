@@ -9,6 +9,9 @@
  * Sets up theme defaults and registers support for various WordPress features.
  */
 function custom_theme_setup() {
+    // Add support for custom logo
+    add_theme_support( 'custom-logo' );
+
     // Let WordPress manage the document title.
     add_theme_support( 'title-tag' );
 
